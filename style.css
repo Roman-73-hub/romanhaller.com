@@ -22,6 +22,9 @@ p{margin:0 0 1em}
 .nav{display:flex;gap:22px;font-size:15px}
 .nav a{text-decoration:none;color:var(--muted)}
 .nav a:hover{color:var(--ink)}
+.social{display:inline-flex;color:var(--ink);margin-left:4px}
+.social:hover{color:var(--accent)}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
 .lang{font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--ink);padding:3px 8px;letter-spacing:.04em}
 .lang:hover{background:var(--ink);color:var(--paper)}
 

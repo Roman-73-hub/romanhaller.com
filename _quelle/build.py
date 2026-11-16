@@ -9,7 +9,7 @@ BASE = "https://www.romanhaller.com"
 DIARY = os.environ.get("DIARY", os.path.join(HERE, "tagebuch.json"))
 if not os.path.exists(DIARY):
     DIARY = "/home/claude/diary/tagebuch.json"
-CSS_V = "32"
+CSS_V = "33"
 
 def size(name, w):
     return Image.open(f"{OUT}/img/{name}-{w}.jpg").size
@@ -35,8 +35,8 @@ T = {
   "ids": ["herkunft", "arbeiten", "werdegang", "heute", "velo", "kontakt"],
   "hero_l": "Biglen", "hero_r": "Zermatt",
   "hero_alt_l": "Webstuhl in der Fabrik der Arm AG in Biglen, 2014",
-  "hero_alt_r": "Steinmänner hoch über Zermatt",
-  "statement": "Ich komme aus Biglen bei Bern, habe Schreiner gelernt und lebe seit Anfang der 1990er Jahre in Zermatt. Seit über 25 Jahren arbeite ich in Hotellerie, Tourismus und Immobilien.",
+  "hero_alt_r": "Matterhorn mit dem 3100 Kulmhotel Gornergrat",
+  "statement": "Ich komme aus Biglen bei Bern, habe Schreiner gelernt und später am IMD in Lausanne den Executive MBA abgeschlossen. Seit Anfang der 1990er Jahre lebe ich in Zermatt und arbeite seit über 25 Jahren in Hotellerie, Tourismus und Immobilien.",
   "statement2": "Heute bringe ich mit meinem Private Office ARM Investoren, Entwickler, Betreiber und Gemeinden zusammen.",
   "portrait_alt": "Porträt Roman Haller",
   "h_origin": "Zwei Orte",
@@ -49,13 +49,13 @@ T = {
   "h_work": "Arbeiten",
   "work": [
     {"y": "2015–2020", "t": "Fabrikareal Biglen",
-     "d": "Umnutzung der früheren Webstuhlfabrik: 3'000 m³ zu Atelierwohnungen, Volumen CHF 8 Mio. Als Eigentümer war ich verantwortlich für Business- und Finanzplan, Architekturkonzept, Kosten, Termine und Qualität. Mit der Zeitschrift Hochparterre haben wir den Umbau mit Anlässen vor Ort begleitet. Die Liegenschaft ist verkauft.",
-     "imgs": [("fabrikhalle", "Fabrikhalle vor dem Umbau, 2014"), ("biglen-2020", "Nach dem Umbau, 2020")], "layout": "pair"},
+     "d": "Umnutzung der früheren Webstuhlfabrik: 3'000 m³ zu Atelierwohnungen, Volumen CHF 8 Mio. Als Eigentümer war ich verantwortlich für Business- und Finanzplan, Architekturkonzept, Kosten, Termine und Qualität. Mit der Zeitschrift Hochparterre haben wir den Umbau mit Anlässen vor Ort begleitet. Die Liegenschaft ist verkauft.",
+     "imgs": [("fabrikhalle", "Fabrikhalle vor dem Umbau, 2014"), ("biglen-kueche", "Atelierwohnung mit Küche nach dem Umbau, 2015. Foto: Marcel Rickli")], "layout": "pair"},
     {"y": "2008–2021", "t": "3100 Kulmhotel Gornergrat",
      "d": "Relaunch und Neupositionierung des höchstgelegenen Hotels der Schweizer Alpen: Marketing- und Verkaufsstrategie, Online-Vertrieb und Verkaufsreisen nach Europa, Nordamerika und Asien. Von 2014 bis 2020 sass ich zudem im Verwaltungsrat der Gornergrat Experience AG, dem Joint Venture von BVZ Gruppe und Matterhorn Group.",
-     "imgs": [("kulm", "3100 Kulmhotel Gornergrat mit dem Matterhorn")], "layout": "wide"},
+     "imgs": [("kulm-abend", "3100 Kulmhotel Gornergrat in der Abenddämmerung")], "layout": "wide"},
     {"y": "2008–2021", "t": "Grand Hotel Zermatterhof und Riffelhaus 1853",
-     "d": "Repositionierung des Grand Hotel Zermatterhof und seiner Restaurants, Rebranding des Riffelhaus 1853. Für die Hotels der Matterhorn Group dazu ein zentrales Reservierungssystem und ein Reporting für die ganze Gruppe, mit 21 % mehr Umsatz in 18 Monaten.",
+     "d": "Repositionierung des Grand Hotel Zermatterhof und seiner Restaurants, Rebranding des Riffelhaus 1853. Für die Hotels der Matterhorn Group dazu ein zentrales Reservierungssystem und ein Reporting für die ganze Gruppe, mit 21 % mehr Umsatz in 18 Monaten.",
      "imgs": [("zermatterhof", "Grand Hotel Zermatterhof am Abend"), ("zermatterhof-lounge", "Lounge im Grand Hotel Zermatterhof"), ("riffelberg-winter", "Hotel am Riffelberg im Winter, im Hintergrund das Matterhorn")], "layout": "trio"},
     {"y": "2014–2015", "t": "150 Jahre Erstbesteigung des Matterhorns",
      "d": "Roadmap und Partnerschaftskonzept zum Jubiläum 2015. Für die Hörnlihütte, die in dieser Zeit erneuert wurde, die Kommunikation, die Partnerschaften und die Website. Während des Umbaus stand auf 2'880 m ein Basislager.",
@@ -64,7 +64,7 @@ T = {
   "more_h": "Weitere Arbeiten",
   "more": [
     ("2024–2026", "Gemeinden und Bauherren im Oberwallis", "Mit der Quant AG: Business- und Betriebsplanung für den Camping Täsch, Nutzungsevaluation für das Turbina-Areal in Zermatt, Roadmap mit Raumprogramm für das Rifugio by CERVO in Täsch."),
-    ("2001–2002", "Expo.02", "Stellvertreter des Projektleiters Swisscom an der Landesausstellung, Mitarbeit im Projektcontrolling eines Engagements von CHF 74 Mio."),
+    ("2001–2002", "Expo.02", "Stellvertreter des Projektleiters Swisscom an der Landesausstellung, Mitarbeit im Projektcontrolling eines Engagements von CHF 74 Mio."),
   ],
   "h_cv": "Werdegang",
   "cv": [
@@ -91,14 +91,14 @@ T = {
   "diary": "Das Tagebuch der 21 Tage lesen",
   "rides_h": "Klassiker",
   "rides": [
-    ("2023", "Tour de Suisse Challenge", "1'131 km, 18'790 Höhenmeter"),
-    ("2023", "Paris-Roubaix Challenge", "170 km über die Pavés"),
-    ("2024", "Strade Bianche Gran Fondo", "144 km auf Schotter, Ziel in Siena"),
-    ("2025", "Ronde van Vlaanderen", "229 km"),
-    ("2025", "Liège-Bastogne-Liège", "253 km"),
-    ("2025", "Il Lombardia Gran Fondo", "über 110 km, Ghisallo und Sormano"),
+    ("2023", "Tour de Suisse Challenge", "1'131 km, 18'790 Höhenmeter"),
+    ("2023", "Paris-Roubaix Challenge", "170 km über die Pavés"),
+    ("2024", "Strade Bianche Gran Fondo", "144 km auf Schotter, Ziel in Siena"),
+    ("2025", "Ronde van Vlaanderen", "229 km"),
+    ("2025", "Liège-Bastogne-Liège", "253 km"),
+    ("2025", "Il Lombardia Gran Fondo", "über 110 km, Ghisallo und Sormano"),
   ],
-  "mountain": "Am Berg: 21 Viertausender und die Patrouille des Glaciers. In Zermatt bin ich Coach im MTB Youth Team.",
+  "mountain": "Am Berg: 21 Viertausender und die Patrouille des Glaciers.",
   "velo_imgs": [
     ("gletsch", "Passstrasse über Gletsch, August 2023"),
     ("lombardia", "Il Lombardia Gran Fondo am Comersee, 2025"),
@@ -116,7 +116,7 @@ T = {
   "imprint_body": [
     ("Impressum", "Roman Haller<br>3920 Zermatt<br>Schweiz<br><a href=\"mailto:rh@arm.swiss\">rh@arm.swiss</a>"),
     ("Datenschutz", "Diese Website setzt keine Cookies, verwendet keine Analysewerkzeuge und lädt keine Schriften oder Inhalte von Dritten. Sie wird bei GitHub Pages (GitHub Inc., USA) betrieben. Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie die IP-Adresse, um die Seite auszuliefern. Wer mir eine E-Mail schreibt, dessen Angaben verwende ich nur, um zu antworten."),
-    ("Bilder", "Fotos Fabrik Biglen 2014, Hörnlihütte und Grand Hotel Zermatterhof: Gaudenz Danuser. Übrige Fotos: Roman Haller, Matterhorn Group und Veranstalter der genannten Anlässe."),
+    ("Bilder", "Fotos Fabrik Biglen 2014, Hörnlihütte und Grand Hotel Zermatterhof: Gaudenz Danuser. Atelierwohnung Biglen 2015: Marcel Rickli. Übrige Fotos: Roman Haller, Matterhorn Group und Veranstalter der genannten Anlässe."),
   ],
   "back": "Zur Startseite",
   "notfound": "Diese Seite gibt es nicht mehr.",
@@ -129,8 +129,8 @@ T = {
   "ids": ["origins", "work", "career", "today", "cycling", "contact"],
   "hero_l": "Biglen", "hero_r": "Zermatt",
   "hero_alt_l": "Loom in the Arm AG factory in Biglen, 2014",
-  "hero_alt_r": "Cairns high above Zermatt",
-  "statement": "I come from Biglen near Bern, trained as a cabinetmaker and have lived in Zermatt since the early 1990s. For more than 25 years I have worked in hospitality, tourism and real estate.",
+  "hero_alt_r": "The Matterhorn with the 3100 Kulmhotel Gornergrat",
+  "statement": "I come from Biglen near Bern, trained as a cabinetmaker and later completed the Executive MBA at IMD in Lausanne. I have lived in Zermatt since the early 1990s and have worked in hospitality, tourism and real estate for more than 25 years.",
   "statement2": "Today, through my private office ARM, I bring together investors, developers, operators and communes.",
   "portrait_alt": "Portrait of Roman Haller",
   "h_origin": "Two places",
@@ -143,11 +143,11 @@ T = {
   "h_work": "Work",
   "work": [
     {"y": "2015–2020", "t": "Biglen factory site",
-     "d": "Conversion of the former loom factory: 3,000 m³ into studio apartments, volume CHF 8m. As owner I was responsible for the business and financial plan, the architectural concept, cost, schedule and quality. Together with the architecture magazine Hochparterre we accompanied the conversion with events on site. The property has been sold.",
-     "imgs": [("fabrikhalle", "Factory hall before the conversion, 2014"), ("biglen-2020", "After the conversion, 2020")], "layout": "pair"},
+     "d": "Conversion of the former loom factory: 3,000 m³ into studio apartments, volume CHF 8m. As owner I was responsible for the business and financial plan, the architectural concept, cost, schedule and quality. Together with the architecture magazine Hochparterre we accompanied the conversion with events on site. The property has been sold.",
+     "imgs": [("fabrikhalle", "Factory hall before the conversion, 2014"), ("biglen-kueche", "Studio flat with kitchen after the conversion, 2015. Photo: Marcel Rickli")], "layout": "pair"},
     {"y": "2008–2021", "t": "3100 Kulmhotel Gornergrat",
      "d": "Relaunch and repositioning of the highest hotel in the Swiss Alps: marketing and sales strategy, online distribution and sales trips to Europe, North America and Asia. From 2014 to 2020 I also sat on the board of Gornergrat Experience AG, the joint venture of BVZ Group and Matterhorn Group.",
-     "imgs": [("kulm", "3100 Kulmhotel Gornergrat with the Matterhorn")], "layout": "wide"},
+     "imgs": [("kulm-abend", "3100 Kulmhotel Gornergrat at dusk")], "layout": "wide"},
     {"y": "2008–2021", "t": "Grand Hotel Zermatterhof and Riffelhaus 1853",
      "d": "Repositioning of the Grand Hotel Zermatterhof and its restaurants, rebranding of the Riffelhaus 1853. For the Matterhorn Group hotels also a central reservation system and group-wide reporting, with 21% more revenue in 18 months.",
      "imgs": [("zermatterhof", "Grand Hotel Zermatterhof in the evening"), ("zermatterhof-lounge", "Lounge at the Grand Hotel Zermatterhof"), ("riffelberg-winter", "Hotel on the Riffelberg in winter, with the Matterhorn")], "layout": "trio"},
@@ -158,7 +158,7 @@ T = {
   "more_h": "More work",
   "more": [
     ("2024–2026", "Communes and developers in the Upper Valais", "With Quant AG: business and operating plan for Camping Täsch, use evaluation for the Turbina site in Zermatt, roadmap and space programme for Rifugio by CERVO in Täsch."),
-    ("2001–2002", "Expo.02", "Deputy project manager for Swisscom at the Swiss national exhibition, project controlling of a CHF 74m engagement."),
+    ("2001–2002", "Expo.02", "Deputy project manager for Swisscom at the Swiss national exhibition, project controlling of a CHF 74m engagement."),
   ],
   "h_cv": "Career",
   "cv": [
@@ -185,14 +185,14 @@ T = {
   "diary": "Read the 21-day diary (in German)",
   "rides_h": "Classics",
   "rides": [
-    ("2023", "Tour de Suisse Challenge", "1,131 km, 18,790 m of climbing"),
-    ("2023", "Paris-Roubaix Challenge", "170 km over the cobbles"),
-    ("2024", "Strade Bianche Gran Fondo", "144 km on gravel, finish in Siena"),
-    ("2025", "Ronde van Vlaanderen", "229 km"),
-    ("2025", "Liège-Bastogne-Liège", "253 km"),
-    ("2025", "Il Lombardia Gran Fondo", "more than 110 km, Ghisallo and Sormano"),
+    ("2023", "Tour de Suisse Challenge", "1,131 km, 18,790 m of climbing"),
+    ("2023", "Paris-Roubaix Challenge", "170 km over the cobbles"),
+    ("2024", "Strade Bianche Gran Fondo", "144 km on gravel, finish in Siena"),
+    ("2025", "Ronde van Vlaanderen", "229 km"),
+    ("2025", "Liège-Bastogne-Liège", "253 km"),
+    ("2025", "Il Lombardia Gran Fondo", "more than 110 km, Ghisallo and Sormano"),
   ],
-  "mountain": "In the mountains: 21 four-thousanders and the Patrouille des Glaciers. In Zermatt I coach the MTB youth team.",
+  "mountain": "In the mountains: 21 four-thousanders and the Patrouille des Glaciers.",
   "velo_imgs": [
     ("gletsch", "Pass road above Gletsch, August 2023"),
     ("lombardia", "Il Lombardia Gran Fondo on Lake Como, 2025"),
@@ -210,7 +210,7 @@ T = {
   "imprint_body": [
     ("Legal notice", "Roman Haller<br>3920 Zermatt<br>Switzerland<br><a href=\"mailto:rh@arm.swiss\">rh@arm.swiss</a>"),
     ("Privacy", "This website sets no cookies, uses no analytics and loads no fonts or content from third parties. It is hosted on GitHub Pages (GitHub Inc., USA). When the site is accessed, GitHub processes technically necessary data such as the IP address in order to deliver it. If you write to me by e-mail, I use your details only to reply."),
-    ("Images", "Photos of the Biglen factory 2014, the Hörnli hut and the Grand Hotel Zermatterhof: Gaudenz Danuser. Other photos: Roman Haller, Matterhorn Group and the organisers of the events mentioned."),
+    ("Images", "Photos of the Biglen factory 2014, the Hörnli hut and the Grand Hotel Zermatterhof: Gaudenz Danuser. Studio flat Biglen 2015: Marcel Rickli. Other photos: Roman Haller, Matterhorn Group and the organisers of the events mentioned."),
   ],
   "back": "Back to the homepage",
   "notfound": "This page no longer exists.",
@@ -292,7 +292,7 @@ def page(t):
     # Einstieg: zwei Orte, ein Name
     s += f"""<section class="hero" aria-label="Roman Haller">
   <div class="hero-half">{img('webstuhl', t['hero_alt_l'], '50vw', lazy=False, pos='50% 55%')}<span class="place">{t['hero_l']}</span></div>
-  <div class="hero-half">{img('steinmann', t['hero_alt_r'], '50vw', lazy=False, pos='60% 50%')}<span class="place">{t['hero_r']}</span></div>
+  <div class="hero-half">{img('matterhorn', t['hero_alt_r'], '(min-width: 601px) 50vw, 100vw', lazy=False, pos='18% 40%')}<span class="place">{t['hero_r']}</span></div>
   <h1 class="hero-name"><span>Roman</span> <span>Haller</span></h1>
 </section>
 <section class="intro">
@@ -416,6 +416,17 @@ for p, tgt in {"/about/": "/#werdegang", "/work/": "/#arbeiten", "/tour-de-suiss
 
 # ---------- Tagebuch ----------
 D = json.load(open(DIARY))
+# Redigierte Fassungen (ARM-Sprache) haben Vorrang vor dem Squarespace-Export
+EDIT = os.path.join(os.path.dirname(DIARY), "redigiert")
+if not os.path.isdir(EDIT):
+    EDIT = "/home/claude/diary/edit"
+for _n, _x in enumerate(D, 1):
+    _f = os.path.join(EDIT, f"tag-{_n:02d}.md")
+    if os.path.exists(_f):
+        _lines = open(_f, encoding="utf-8").read().strip().split("\n")
+        _x["title"] = _lines[0].lstrip("# ").strip()
+        _paras = [l.strip() for l in "\n".join(_lines[1:]).split("\n\n") if l.strip()]
+        _x["body"] = "".join(f"<p>{html.escape(q)}</p>" for q in _paras)
 def clean_title(t):
     t = t.replace("ß", "ss")
     if " - " in t:
@@ -439,7 +450,7 @@ def body_html(b):
 
 td = T["de"]
 intro = [
-    "Ich habe mir ein Ziel gesetzt, das über das Gewöhnliche hinausgeht: eine Reise von meinem Zuhause in Zermatt bis zu meinen Wurzeln in Bern, über alle 124 offiziellen Schweizer Strassenpässe.",
+    "Im August 2023 bin ich von meinem Zuhause in Zermatt zu meinen Wurzeln in Bern gefahren, über alle 124 offiziellen Schweizer Strassenpässe.",
     "Mit durchschnittlich 88 Kilometern und 2'600 Höhenmetern pro Tag und fast fünf Stunden im Sattel war die Reise auch eine körperliche Herausforderung. Vor allem aber wollte ich die Schweiz, meine Heimat, auf eine neue Weise kennenlernen. Unterwegs habe ich jeden Tag aufgeschrieben, was ich erlebt habe.",
 ]
 cards = ""
